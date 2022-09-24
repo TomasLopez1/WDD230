@@ -13,7 +13,7 @@
     p {
         font-size: 14px;
     }
-
+/* a new class for the last one*/
     .last{
         grid-column: 1/3;
     }
