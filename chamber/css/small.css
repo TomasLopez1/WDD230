@@ -1,0 +1,281 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body {
+  padding: 0;
+  font-size: 25px;
+  line-height: 1.5;
+  font-family: helvetica, serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #092c64;
+}
+
+
+
+
+/*        HEADER        */
+header {
+  background-color: #ac2176;
+  padding: 1rem 0;
+  border-top: 2px solid #968150;
+  border-left: 2px solid #968150;
+  border-bottom: 2px solid #968150;
+  border-right: 2px solid #968150;
+  color:#f9f8be
+}
+
+.headertop {
+	padding: 5px 0;
+	display: flex;
+	justify-content: space-between;
+  background-color: #ac2176;
+}
+
+.headings h1, h2{
+	display: flex;
+	flex-direction: column;
+  margin: 0;
+	padding-left: .5rem;
+  font-family: 'Playfair Display', helvetica;
+
+}
+
+.headings h1 {
+	font-size: 1.5rem;
+}
+
+.headings h2 {
+  font-size: 1rem;
+}
+
+
+
+
+
+
+/*         LOGO         */
+.logo {
+	display: flex;
+	align-items: flex-start;
+	margin-left: 1rem;
+}
+
+.logo img {
+	width: 6rem;
+	height: auto;
+}
+
+picture {
+  display: flex;
+}
+
+
+
+
+/*        REVERSE       */
+.reverse {
+	display: flex;
+	align-items: left;
+}
+
+
+
+
+
+/*        SOCIAL        */
+.social img {
+  align-items: flex-start;
+  width: 2.2rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+
+
+
+/*       HAMBURGER      */
+nav button{
+  background: transparent;
+  border: none;
+  font-size: 2.5rem;
+  color:#b89d3b;
+}
+
+nav {
+  background-color: #a01a6d;
+  margin-right: .6rem;
+  border-top: 2px solid #092c64;
+  border-left: 1px solid #092c64;
+  border-bottom: 2px solid #092c64;
+  border-right: 1px solid #092c64;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: .8rem 2vw;
+  font-size: 1.3rem;
+
+  text-decoration: none;
+  color:#f9f8be;
+  border-top: 1px;
+  
+}
+
+nav ul li.active a {
+  background-color: #093375;
+  color: #f9f8be;
+  border-radius: 5px;
+  margin: 1px;
+}
+
+nav ul li a:hover {
+  background-color: #092c64;
+  border-radius: 5px;
+}
+
+nav ul { display: none; }
+
+nav ul.open { 
+  display: block; 
+  text-align:  right;
+}
+
+#hamburgerBtn span:nth-child(1) { display: block; }
+#hamburgerBtn span:nth-child(2) { display: none; }
+
+#hamburgerBtn.open span:nth-child(1) { display: none; }
+#hamburgerBtn.open span:nth-child(2) { display: block;}
+
+
+
+
+/*         DATE         */
+.date {
+  display: block;
+  text-align: center;
+  border-top: 2px solid #968150;
+  border-left: 2px solid #968150;
+  border-bottom: 2px solid #968150;
+  border-right: 2px solid #968150;
+  background-color: #b89d3b;
+  padding: 1px;
+  margin: 0 1rem;
+  border-radius: 5px;
+  color: #092c64
+} 
+
+
+
+
+/*         MAIN         */
+main {
+  display:grid;
+  grid-template-columns: 98%;
+  grid-gap: 5px;
+  padding: 1rem 0;
+}
+
+main div {
+  background-color: lightgray;
+  border: 1px solid gray;
+  padding-bottom: 10rem;
+}
+
+.spotlight div {
+  border: 1px solid gray;
+  background-color: lightgray;
+  padding-bottom: 10rem;
+  margin: 1rem 1rem;
+} 
+
+.spotlight {
+  display:grid;
+  grid-area: 1fr;
+  padding-bottom: 0rem;
+}
+
+.join {
+  display: none;
+}
+
+
+
+
+/*         FOOTER        */
+  footer {
+    display: grid;
+    grid-template-columns: 98%;
+    background-color: #ac2176;
+    border-top: 2px solid #968150;
+    border-left: 2px solid #968150;
+    border-bottom: 2px solid #968150;
+    border-right: 2px solid #968150;
+    color:#f9f8be;
+    justify-items: center;
+    text-align: center;
+ }
+
+  .imagefooter {
+    grid-row: 1;
+    grid-column: 1 / -1;
+    }
+
+  .namefooter {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    }
+
+  .mapfooter {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  .jsfooter {
+    grid-column: 1 / -1;
+    grid-row: 4;
+  }
+
+  footer p {
+    margin: .2rem;
+    font-size: 1rem;
+  }
+
+
+
+/*      FOOTER  LOGO     */
+  .imagefooter img {
+    width: 6rem;
+    height: auto;
+  }
+
+
+
+
+
+/*     FOOTER  JAVAS     */
+  .jsfooter {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #092c64;
+  }
+
+  .jsfooter p {
+    padding: 0 1rem;
+  }
+
+  .jsfooter1 {
+    display: flex;
+    flex-direction: column;
+  } 
+
