@@ -47,6 +47,7 @@ header {
   margin: 0;
 	padding-left: .5rem;
   font-family: helvetica;
+  font-size: 0.8rem;
 
 }
 
@@ -57,12 +58,6 @@ header {
 .headings h2 {
   font-size: 1rem;
 }
-.headings h3{
-  font-size: 0.8rem;
-}
-
-
-
 
 
 
