@@ -8,7 +8,11 @@ function toggleMenu() {
   x.onclick = toggleMenu;
 
   //--- Banner ---//
-const dayNumber = now.getDay();
+  const today = new Date();
+  console.log(today);
+  
+const dayNumber = today.getDay();
+console.log(dayNumber);
 const element = document.getElementById("banner");
 
 if (dayNumber == 1 || dayNumber == 2 ) {
