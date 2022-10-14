@@ -242,7 +242,7 @@ main, picture, main h2{margin: 0.5rem;}
 
 .hero {
 	width: auto;
-	background-image: url('/chamber/images/antofagasta.png');
+	background-image: url('https://tomaslopez1.github.io/chamber/images/antofagasta.png');
 	background-size: cover;
 	background-position: center;
 	display: grid;
