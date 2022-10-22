@@ -190,6 +190,9 @@ nav ul.open {
 
 /*         MAIN         */
 main, picture, main h2{margin: 0.5rem;}
+.hero-img img{
+  width: 100%;
+}
 
 .event, .weather, .join, .hero, .spotlight1, .spotlight2, .news {
 	background-color:#968150;
@@ -197,6 +200,7 @@ main, picture, main h2{margin: 0.5rem;}
 	text-align: center; 
 	padding: 4%;
 }
+
 .maingrid{    
 	display: grid;
 	grid-template-columns: 1fr 1fr;
