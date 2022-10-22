@@ -88,13 +88,15 @@
 
     <div class="weather">
       <h2>Weather</h2>
-      <ul>
-        <li>⛅</li>
-        <li>Temperature: 33°C</li>
-        <li>Partly Cloudy</li>
-        <li>Wind Speed: 2.5Km/h</li>
-        <li>Wind Chill: N/A</li>
-      </ul>
+      <div class="cloudy">
+        <img src="images/weather.webp" alt = "weather">
+        <p><span id="temp">33</span>&deg;C</p>
+                </div>
+                <h3>Partly Cloudy</h3>
+                <hr>
+                <p>current wind speed is <span id="speed">60</span> mph</p>
+                <p id="chill">message</p>
+                
     </div>
 
     <div class="news">
@@ -163,6 +165,7 @@
 
   <script src="js/date.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/windchill.js"></script>
   
 </body>
 </html>

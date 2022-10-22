@@ -302,13 +302,14 @@ main, picture, main h2{margin: 0.5rem;}
 .spotlight1, .spotlight2 {
   font-size: 14px;
 }
-.spotlight1 img, .spotlight2 img {
+.spotlight1 img, .spotlight2 img, .weather img {
   margin: auto; 
-  width: 30%;
+  width: 40%;
 }
-.weather ul {
-  list-style-type: none; 
-  padding: 0%;}
+
+.weather{
+  font-size: 1rem;
+}
 
 
 
