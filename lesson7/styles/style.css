@@ -20,13 +20,16 @@
   
   header,footer {
     text-align: center;
-    border-radius:10px;
+    border-radius:5rem;
     padding: 3%;
     background-color: rgba(250, 205, 107, 0.918);
    }
   
   header {
+  margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-left: 12rem;
+  margin-right: 12rem;
   }
   
   main {
@@ -53,7 +56,10 @@
   
   footer {
     margin-top: 1rem;
-    border-radius:10px;
+    margin-bottom: 1rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    border-radius:5rem;
     padding: 3%;
   }
 }
