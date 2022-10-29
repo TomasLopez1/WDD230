@@ -390,3 +390,69 @@ main, picture, main h2{margin: 0.5rem;}
     flex-direction: column;
   } 
 
+/*     D I S C O V E R   P A G E      */
+.last-visit {
+	margin: auto;
+  text-align: center;
+	width: auto;
+	padding: .1rem;
+  border-radius: 5px;
+	color:#14213D;
+	background-color:#b89d3b;
+	border: 1px solid #cfcfcf;
+}
+
+.main-discover {
+  text-align: center;
+}
+
+.description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #f9f8be;
+}
+.demography {
+  font-size: 18px;
+  color: #f9f8be;
+
+}
+.description, .demography {
+	padding: 2%;
+	background-color: #7c1d58;
+	border: 1px solid #968150;
+}
+.description h2, .demography h2 {
+  text-shadow: 3px 3px 3px black;
+  color:#f9f8be;
+}
+
+.images-container {
+  margin: 50px auto 50px auto;
+}
+
+.images-container figure {
+	margin: auto;
+  margin-top: 5px;
+	padding: 1rem;
+	background-color:#7c1d58;
+	border: 1px solid #cfcfcf; 
+  border-radius: 5px;
+}
+
+.images-container img {
+	margin: 0px;
+	width: 250px;
+	height: 333px;
+  border-radius: 5px;
+}
+
+figcaption {
+	margin: auto;
+	padding: .5rem;
+	width: 250px;
+	background-color: #968150;
+  border-radius: 5px;
+  font-size: 18px;
+  
+}

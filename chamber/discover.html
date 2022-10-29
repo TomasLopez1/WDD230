@@ -55,8 +55,8 @@
       <nav>
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <ul id="primaryNav">
-            <li class="active"><a href="./index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li class="active"><a href="discover.html">Discover</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Contact</a></li>    
         </ul>
@@ -64,67 +64,40 @@
     </div>
 
   </header>
-  <main>
-  <picture class="hero-img">    
-      <source srcset="images/heroSrc400.jpg" media="(max-width: 400px)">
-      <source srcset="images/heroSrc650.jpg" media="(max-width: 650px)">
-      <source srcset="images/heroSrc900.jpg" media="(max-width: 900px)">
-      <img src="images/heroSrc1050.jpg " alt="Hero Img">
-  </picture>
-  <div class="maingrid">
-    <div class="hero">
-      <div class="hero-txt">
-        <h3>Welcome to Antofagasta</h3>
-        <button>Join the chamber</button>
-      </div>
-    </div>
-  
+  <main class="main-discover">
+    <p class="last-visit"><span>Days since last visit: </span><span class="visitor"></span></p>
+    <section class="description">
+        <h2>Antofagasta</h2>
+        <p>Antofagasta, also known as "The Pearl of the North", is a city and port in the Norte Grande of Chile. Antofagasta has a normal desert climate (BWk), with an average annual temperature that exceeds 18 °C (64F°). The surface has a length of approximately 500 kilometers, and covers an area of 126,049.10 square kilometers, equivalent to 16.67% of the national territory.</p>
+    </section>
+    <section class="demography">
+        <h2>Demography of Antofagasta</h2>
+        <p>The regional population is 493,984 inhabitants, equivalent to 3.27% of the national population, and its population density is 3.9 inhabitants/km2. The region has an average annual intercensal population growth rate of 2.0%. The rural population is 11,438 people, representing 2.3% of the total regional population.</p>
+    </section>
+    <div class="images-container">
+        <figure class="img1">
+            <img src="images/costa-laguna.jpg" loading="lazy" alt="Costa Laguna">
+            <figcaption>One of the largest swimming pools in Chile.</figcaption>
+        </figure> 
+        <figure class="img2">
+            <img src="images/mano-desierto.jpg" loading="lazy" alt="Mano del Desierto">
+            <figcaption>Sculpture of a hand in the desert.</figcaption>
+        </figure>
+        <figure class="img3">
+            <img src="images/plaza-colon.jpg" loading="lazy" alt="Plaza Colón">
+            <figcaption>Historical monument and main square of Antofagasta, it has a British style clock.</figcaption>
+        </figure>
+        <figure class="img4">
+            <img src="images/ruinas-huanchaca.jpg" loading="lazy" alt="Ruinas de Huanchaca">
+            <figcaption>This old stone building was a silver smelting factory.</figcaption>
+        </figure>
+        <figure class="img5">
+            <img src="images/valle-luna.jpg" loading="lazy" alt="Valle de la Luna">
+            <figcaption>Huge dunes, valleys and hills of salt, rock and sand. Known for its starry skies.</figcaption>
+        </figure>
 
-    <div class="event">
-      <h2>Ribbon Cutting</h2>
-      <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00p.m.</p><a href="#">More Info...</a>
-
-    </div>
-
-    <div class="weather">
-      <h2>Weather</h2>
-      <div class="cloudy">
-        <img src="images/weather.webp" alt = "weather">
-        <p><span id="temp">33</span>&deg;C</p>
-                </div>
-                <h3>Partly Cloudy</h3>
-                <hr>
-                <p>current wind speed is <span id="speed">60</span> mph</p>
-                <p id="chill">message</p>
-                
-    </div>
-
-    <div class="news">
-      <h2>News Release</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repellat quasi a fugit quae fuga animi optio, amet dolores consequuntur qui laboriosam esse odio neque, veniam maiores, harum officia ipsa.</p>
     </div>
 
-    <div class="join">
-      <button class="btn-purple">Join Us!</button>
-      <p>Discover how to join the chamber of commerce and how it wil benfit your organization!</p>
-    </div>
-
-    
-    <div class="spotlight1">
-        <h2>Thankful Transport</h2>
-        <img src="images/trans-truck.webp" alt = "Transport">
-        <h3>"We get it there for you"</h3>
-        <hr>
-        <p>hello@thankfultransport.com<br>+999-9999-9999</p>
-    </div>
-      <div class="spotlight2">
-        <h2>Code Primera</h2>
-        <img src="images/pencils.webp" alt = "Pencils">
-        <p>An after school coding instructional program.</p>
-        <hr>
-        <p>contact@codeprimera.com<br>+999-9999-9999</p>
-      </div>
-  </div> 
 
   </main>
 
@@ -165,7 +138,8 @@
 
   <script src="js/date.js"></script>
   <script src="js/menu.js"></script>
-  <script src="js/windchill.js"></script>
+  <script src="js/localStorage.js"></script>
+ 
   
 </body>
 </html>
