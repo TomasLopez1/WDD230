@@ -1,25 +1,25 @@
-const visitor = document.querySelector(".visitor");
+var visited = localStorage.getItem("visits");
+var previousDate = localStorage.getItem("date");
+var visitDate = Date.now();
+var totalDays = Math.floor((visitDate - previousDate) / 86400000);
 
-let MSinDay = 1000 * 60 * 60 * 24;
-let thisday = Date.now();
-let numvisitor = Number(localStorage.getItem("visitor"));
-let lastVisit = localStorage.getItem('dateVisited');
-let daysPassed, difference;
-
-if (numvisitor !== 0) {
-    localStorage.setItem("dateVisited", thisday);
-    difference = thisday - lastVisit
-    daysPassed = Math.round(difference / MSinDay)
-    daysPassed = "Welcome, this is your first visit!"
-}else {
-    localStorage.setItem('visitor', 1)
-    localStorage.setItem("dateVisited", thisday);
-    daysPassed = "I'm glad you're coming back to visit!"
-
+if (visited == 1) {
+  document.getElementById(
+    "visits"
+  ).textContent = `Welcome Back! You have been here ${visited} time!`;
+} else if (visited > 1) {
+  document.getElementById(
+    "visits"
+  ).textContent = `Welcome Back! You have been here ${visited} times!`;
+} else if (!visited) {
+  document.getElementById(
+    "visits"
+  ).textContent = `Welcome! This is your first time with us!`;
+  totalDays = 0;
 }
-
-numvisitor++
-
-localStorage.setItem('visitor', numvisitor)
-
-visitor.textContent = daysPassed
+document.getElementById(
+  "visitTime"
+).textContent = `There have been ${totalDays} days since your last visit.`;
+visited++;
+localStorage.setItem("visits", visited);
+localStorage.setItem("date", visitDate);

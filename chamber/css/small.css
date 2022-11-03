@@ -391,9 +391,10 @@ main, picture, main h2{margin: 0.5rem;}
   } 
 
 /*     D I S C O V E R   P A G E      */
-.last-visit {
+.visits {
 	margin: auto;
   text-align: center;
+  font-size: 18px;
 	width: auto;
 	padding: .1rem;
   border-radius: 5px;
