@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This shows a general design of a table in HTML.">
+    <title>Table Build</title>
+    <link rel="stylesheet" href="styles/tablecss.css">
+  </head>
+  <body>
+    <table>
+      <caption>
+        Sales
+      </caption>
+      <thead>
+        <tr class="columns">
+          <th>Month</th>
+          <th>Amount</th>
+          <th>Goal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="columns">
+          <td>August</td>
+          <td>$3,670</td>
+          <td>$4,000</td>
+        </tr>
+        <tr class="columns">
+          <td>September</td>
+          <td>$4,650</td>
+          <td>$5,000</td>
+        </tr>
+        <tr class="columns">
+          <td>October</td>
+          <td>$5,880</td>
+          <td>$5,200</td>
+        </tr>
+        <tr class="columns">
+          <td>November</td>
+          <td>$7,750</td>
+          <td>$7,600</td>
+        </tr>
+        <tr class="columns">
+          <td>Black Friday</td>
+          <td colspan="2">$4,120</td>
+        </tr>
+        <tr class="columns">
+          <td>December</td>
+          <td>$6,980</td>
+          <td class="highlight">$7,500</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">&copy;2022 BYUI | Tomas Lopez </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
