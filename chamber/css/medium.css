@@ -106,6 +106,11 @@
     .img3 {grid-column: 1/3; grid-row: 4/6;}
     .img4 {grid-column: 3/5; grid-row: 5/7;}
     .img5 {grid-column: 1/3; grid-row: 8/10;}
+    
+    .form-join {
+      margin: auto;
+      width: 60%;
+    padding: 5%;
 }
   
-  
+}

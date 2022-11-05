@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANF Chamber of Commerce</title>
+  <meta name="description" content="Home page for ANF Chamber of Commerce">
+
+<link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="banner">
+    <p>🤝🏼 Join us for the chamber meet and greet on Wednesday at 7:00 p.m.</p>
+</div>
+  <header>
+    <div class="headertop">
+      <div class="logo">
+        <picture>
+          <img src="images/chamber-logo.webp" alt="ANF Chamber Logo">
+        </picture>
+
+        <section class="headings">
+          <h1>Antofagasta Chamber of Commerce</h1>
+          <h2>"Progress and development within your reach"</h2>
+
+        </section>
+      </div>
+
+
+
+      <div class="reverse">
+        <div class="social">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook.webp" alt="Facebook Icon">
+          </a>
+
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="images/instagram.webp" alt="Instagram Icon">
+          </a>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="date">
+      <p class="date"></p>
+    </div>
+    <div class="menu">
+      <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+            <li><a href="#">Contact</a></li>    
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <main class="join-main">
+    <form class="form-join" method="get" action="thankyou.html">
+        <fieldset>
+            <h2>Contact Information</h2>
+            <!-- first-name -->
+            <label class="top" for="first-name">First name <input type="text" name="fname" id="first-name" required></label>
+
+            <!-- last-name -->
+            <label class="top" for="last-name">Last name <input type="text" name="lname" id="last-name" required></label>
+
+            <!-- Title/position -->
+            <label class="top" for="title">Title/position <input type="text" name="title" pattern="^[a-zA-Z- ]{7,}$" id="title"></label>
+
+            <!-- email -->
+            <label class="top" for="email">Email <input type="email" name="email" id="email" placeholder="example@gmail.com" required></label>
+
+            <!-- phone-number -->
+            <label class="top" for="phone">Phone-number <input type="tel" name="phone" id="phone" required></label>
+        </fieldset>
+
+        <fieldset>
+            <h2>Business Information</h2>
+            <!-- business-name -->
+            <label class="top" for="business-name">Business name <input type="text" name="business-name" id="business-name" required></label>
+            
+            <!-- describe-business -->
+            <label class="top" for="describe-business">Business Description<textarea id="describe-business" name="describe-business" placeholder="..."></textarea></label>
+        
+            <!-- date -->
+            <input type="hidden" name="datetime" id="todayDate">
+        </fieldset>         
+        
+        <fieldset class="membership">
+
+            <!-- Membership -->
+            <h2>Membership</h2>
+            <div class="membership-div">
+
+                <!-- NP Membership -->
+                    <label class="categories" for="non-profit-membership"> <input type="radio" name="member-ship" id="non-profit-membership" value="NPMembership"> Non-Profit Membership</label><br>
+                    <ul class="non-profit-beneficts">
+                        <li>No fee</li>
+                        <li>for non profit organizations</li>
+                        <li>Advertisement e-mails about chamber events</li>
+                    </ul>    
+                
+                <!-- Bronze Membership -->
+                    <label class="categories" for="bronze-membership"> <input type="radio" name="member-ship" id="bronze-membership" value="Bronze Membership"> Bronze Membership</label><br>
+                    <ul class="bronze-beneficts">
+                        <li>Annual cost: $50</li>
+                        <li>Exclusive portfolio of benefits and additional services</li>
+                    </ul>
+
+                <!-- Silver Membership -->
+                    <label class="categories" for="silver-membership"> <input type="radio" name="member-ship" id="silver-membership" value="Silver Membership"> Silver Membership</label><br>
+                    <ul class="silver-beneficts">
+                        <li>Annual cost: $120</li>
+                        <li>20% on room rentals at the Business Center.</li>
+                        <li>Access to special events.</li>
+                    </ul>
+
+                <!-- Gold Membership -->
+                    <label class="categories" for="gold-membership"> <input type="radio" name="member-ship" id="gold-membership" value="Gold Membership"> Gold Membership</label><br>
+                    <ul class="gold-beneficts">
+                        <li>Annual cost: $160</li>
+                        <li>Seminars</li>
+                        <li>20% on room rentals at the Business Center.</li>
+                        <li>Access to special events and premium content.</li>
+                        <li>Personalized support from an Affiliate professional.</li>
+                        <li>Access to the Annual Affiliate Network Meeting</li>
+                    </ul>
+            </div>
+        </fieldset>
+
+        <!-- button -->
+        <input class="submitBtn" type="submit" value="join">
+    </form>
+
+  </main>
+
+  <footer>
+    <div class="imagefooter">
+      <picture>
+        <img src="images/chamber-logo.webp" alt="ANF Chamber Logo">
+      </picture>
+    </div>
+
+    <div class="namefooter">
+      <p>ANF Chamber</p>
+      <p>252 Simón Bolívar, Antofagasta</p>
+    </div>
+
+    <div class="mapfooter">
+      <a href="info@anfchamber.com">info@anfchamber.com</a><br>
+      <a href="tel:+56956156974">+(56) 956-156-974</a><br>
+      <p>
+        <a href="https://www.google.com/maps/@-23.6446117,-70.3973448,3a,75y,27.88h,89.26t/data=!3m6!1e1!3m4!1sxsTi2Knfm9W_HIwnkv6usw!2e0!7i13312!8i6656?hl=es" target="_blank">
+          <img src="images/location.webp" alt="ANF Chamber location">
+        </a>
+        Location Map
+      </p>
+    </div>
+
+    <div class="jsfooter">
+      <div class="jsfooter1">
+        <p>&copy; <span id="year"> </span> ANF Chamber </p>
+        <p>Tomas Lopez</p>
+        <p>WDD 230</p>
+      </div>
+      <div>
+      <p id="lastupdated"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/date.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/localStorage.js"></script>
+ 
+  
+</body>
+</html>
