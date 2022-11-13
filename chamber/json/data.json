@@ -1,0 +1,76 @@
+{ 
+  "companies": [
+    {
+      "name": "Farmacias Ahumada",
+      "address": "Av. Pedro Aguirre Cerda 9400",
+      "phoneNumber": "+56232740698",
+      "URL": "https://www.farmaciasahumada.cl/",
+      "image": "images/farmahumada.webp",
+      "membershipLevel": 1
+    }, 
+    {
+      "name": "Teleton",
+      "address": "Oficina Francisco Puelma 238",
+      "phoneNumber": "+56552683101",
+      "URL": "https://www.teleton.cl/",
+      "image": "images/teleton.webp",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Preunic",
+      "address": "Manuel Antonio Matta 2405-2493",
+      "phoneNumber": "+56552450718",
+      "URL": "https://preunic.cl/",
+      "image": "images/preunic.webp",
+      "membershipLevel": 2
+    },
+    {
+      "name": "latam",
+      "address": "Arturo Prat 445",
+      "phoneNumber": "600 526 2000",
+      "URL": "https://www.latamairlines.com/cl/es",
+      "image": "images/latam.webp",
+      "membershipLevel": 2
+    },   
+    {
+      "name": "Inter Sea LTDA",
+      "address": "Teniente Manuel Orella 610",
+      "phoneNumber": "9 4291 8378",
+      "URL": "http://intersealtda.cl/",
+      "image": "images/intersea.webp",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Casaideas",
+      "address": "Av. Balmaceda 2415,",
+      "phoneNumber": "(2) 2389 1000",
+      "URL": "https://casaideas.cl/",
+      "image": "images/casaideas.webp",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Unimarc",
+      "address": "Av. Pedro Aguirre Cerda 8700",
+      "phoneNumber": "600 600 0025",
+      "URL": "https://www.unimarc.cl/",
+      "image": "images/unimarc.webp",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Bata",
+      "address": "Manuel Antonio Matta 2571",
+      "phoneNumber": "(55) 226 8826",
+      "URL": "https://www.bata.cl/",
+      "image": "images/bata.webp",
+      "membershipLevel": 3
+    },
+    {
+      "name": "BSA",
+      "address": "Av, El Abra 250",
+      "phoneNumber": "(55) 262 6601",
+      "URL": "http://www.cementosbsa.com/",
+      "image": "images/chamber-logo.webp", 
+      "membershipLevel": 3
+    }
+  ]
+}
