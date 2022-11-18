@@ -1,0 +1,37 @@
+
+body {
+    margin: 0; 
+    padding: 0; 
+    text-align: center; 
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+header, footer {
+    background-color: #00a9af;
+    border-radius: 10px;
+    margin-left:2px;
+    margin-right: 2px;
+
+}
+
+h1{
+    padding: 20px;
+    
+}
+
+footer {
+    padding: 20px;
+}
+
+main {
+    background-color: #4eadad7c;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+section {
+    background-color: #53c2ca;
+    padding: 5rem;
+    border-radius: 10px;
+}

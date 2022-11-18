@@ -18,6 +18,7 @@ const displayDirectory = (dataDirectory) => {
         logo.setAttribute('alt', `Photo of ${company.name}`);
         logo.setAttribute('loading', 'lazy');
 
+
         address.textContent = `${company.address}`;
         phoneNumber.textContent = `${company.phoneNumber}`;
         URL.textContent = `${company.URL}`;
