@@ -1,15 +1,7 @@
-const tempNumber = parseFloat(document.getElementById("temp").textContent);
-//console.log (tempNumber);
+const temperatureF = Math.round((document.getElementById("temperature").textContent * (9/5)) + 32);
+const speedmph = Math.round(document.getElementById("windSpeed").textContent / 1.609);
 
-const speedNumber = parseFloat(document.getElementById("speed").textContent);
-//console.log (SpeedNumber);
-
-let windchill = 35.74 + (0.6215 * tempNumber) - (35.75 * Math.pow(speedNumber, 
-    0.16)) + (0.4275 * tempNumber * Math.pow(speedNumber, 0.16));
-windchill = Math.round(windchill);
-
-if(tempNumber<=50 && speedNumber >3) {
-    document.getElementById("chill").textContent = "Wind Chill is "+windchill+"\xB0F";
-} else {
-    document.getElementById("chill").textContent = "No Wind Chill Today";
+if (temperatureF <= 50 && speedmph > 3.0) {
+    const chill = Math.round(35.74 + 0.6215 * temperatureF - 35.75 * speedmph ** 0.16 + 0.4275 * temperatureF * speedmph ** 0.16);
+    document.getElementById("windChill").textContent = `${Math.round(chill * 1.609)} \u00B0C`;
 }

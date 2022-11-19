@@ -65,12 +65,7 @@
 
   </header>
   <main>
-  <picture class="hero-img">    
-      <source srcset="images/heroSrc400.jpg" media="(max-width: 400px)">
-      <source srcset="images/heroSrc650.jpg" media="(max-width: 650px)">
-      <source srcset="images/heroSrc900.jpg" media="(max-width: 900px)">
-      <img src="images/heroSrc1050.jpg " alt="Hero Img">
-  </picture>
+
   <div class="maingrid">
     <div class="hero">
       <div class="hero-txt">
@@ -89,16 +84,20 @@
     <div class="weather">
       <h2>Weather</h2>
       <div class="cloudy">
-        <img src="images/weather.webp" alt = "weather">
-        <p><span id="temp">33</span>&deg;C</p>
-                </div>
-                <h3>Partly Cloudy</h3>
-                <hr>
-                <p>current wind speed is <span id="speed">60</span> mph</p>
-                <p id="chill">message</p>
-                
+        <picture>
+          <img src="" alt="" id="weather-icon" />
+        </picture>
+        <h3><span id="temperature"></span>&#176;C</h3>
+        <h3 id="condition"></h3>
+      </div>
+      <div class="climate">
+        <p>Wind Speed:<span id="windSpeed"></span> Km/h</p>
+        <p>Wind Chill:</p>
+        <p id="windChill">N/A</p>
+        <p class="weather-link">Data provided by: <a href="https://openweathermap.org/">openweathermap.org</a></p>
+        
+      </div>
     </div>
-
     <div class="news">
       <h2>News Release</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repellat quasi a fugit quae fuga animi optio, amet dolores consequuntur qui laboriosam esse odio neque, veniam maiores, harum officia ipsa.</p>
@@ -166,6 +165,7 @@
   <script src="js/date.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/windchill.js"></script>
+  <script src="js/weather.js"></script>
   
 </body>
 </html>
