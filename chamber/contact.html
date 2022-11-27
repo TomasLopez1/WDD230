@@ -55,81 +55,54 @@
       <nav>
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <ul id="primaryNav">
-            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="directory.html">Directory</a></li>
-            <li><a href="contact.html">Contact</a></li>      
+            <li class="active"><a href="contact.html">Contact</a></li>  
         </ul>
       </nav>
     </div>
 
   </header>
-  <main>
-
-  <div class="maingrid">
-    <div class="hero">
-      <div class="hero-txt">
-        <h3>Welcome to Antofagasta</h3>
-        <a class="btn-purple" href="join.html">Join the Chamber</a>
-      </div>
+  <main class="join-main">
+    <div class="contact">
+        <h2>Customer Service:</h2>
+        <p>Monday to friday, from 9am to 6pm.<br>
+            <br>Saturday from 9am to 1pm.</p>
+ 
     </div>
-  
-
-    <div class="event">
-      <h2>Ribbon Cutting</h2>
-      <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00p.m.</p><a href="join.html">More Info...</a>
-
-    </div>
-
-    <div class="weather">
-      <h2>Weather</h2>
-      <div class="cloudy">
-        <picture>
-          <img src="https://placehold.jp/80x80.png" alt="current-weather" id="weather-icon" >
-        </picture>
-        <h3><span id="temperature"></span>&#176;C</h3>
-        <h3 id="condition"></h3>
-        <p>📌</p>
-      </div>
-      <div class="climate">
-        <p>Wind Speed:<span id="windSpeed"></span> Km/h</p>
-        <p>Wind Chill:</p>
-        <p id="windChill">N/A</p>
-        <p class="weather-link">Data provided by: <a href="https://openweathermap.org/">openweathermap.org</a></p>
-        
-      </div>
-    </div>
-    <div class="news">
-      <h2>News Release</h2>
-      <p>✨The chamber has developed new international connections.<br>✨New companies have joined the Antofagasta Chamber of Commerce. <br>✨Commerce web page updated.</p>
-    </div>
-
-    <div class="join">
-      
-      <p>Discover how to join the chamber of commerce and how it wil benfit your organization!</p>
-      <a class="btn-purple" href="join.html">Join Us!</a>
-    </div>
-
     
-    <div class="spotlight1">
-        <h2>Thankful Transport</h2>
-        <img src="images/trans-truck.webp" alt = "Transport">
-        <h3>"We get it there for you"</h3>
-        <hr>
-        <a href="thankfultransp@gmail.com">thankfultransp@gmail.com</a>
-        <a href="tel:+56952567893">+(56) 952-567-893</a>
-    </div>
-      <div class="spotlight2">
-        <h2>Code Primera</h2>
-        <img src="images/pencils.webp" alt = "Pencils">
-        <p>An after school coding instructional program.</p>
-        <hr>
-        <a href="codepcontact@gmail.com">codepcontact@gmail.com</a>
-        <a href="tel:+56978968364">+(56) 978-968-364</a>
+    <form class="form-join" method="get" action="thankyou.html">
+        <fieldset>
+            <h2>Contact</h2>
+            <!-- first-name -->
+            <label class="top" for="first-name">First name <input type="text" name="fname" id="first-name" required></label>
+
+            <!-- last-name -->
+            <label class="top" for="last-name">Last name <input type="text" name="lname" id="last-name" required></label>
+
+            <!-- email -->
+            <label class="top" for="email">Email <input type="email" name="email" id="email" placeholder="example@gmail.com" required></label>
+
+            <!-- phone-number -->
+            <label class="top" for="phone">Phone-number <input type="tel" name="phone" id="phone" required></label>
+        </fieldset>
+
+        <fieldset>
+            <h2>Question / Concern</h2>
+
+            <!-- describe-business -->
+            <label class="top" for="describe-business"><textarea id="describe-business" name="describe-business" placeholder="..."></textarea></label>
         
-      </div>
-  </div> 
+            <!-- date -->
+            <input type="hidden" name="datetime" id="todayDate">
+        </fieldset>         
+        
+
+        <!-- button -->
+        <input class="submitBtn" type="submit" value="submit">
+    </form>
 
   </main>
 
@@ -170,8 +143,8 @@
 
   <script src="js/date.js"></script>
   <script src="js/menu.js"></script>
-  <script src="js/windchill.js"></script>
-  <script src="js/weather.js"></script>
+  <script src="js/localStorage.js"></script>
+ 
   
 </body>
 </html>

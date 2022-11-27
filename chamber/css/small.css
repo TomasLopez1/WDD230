@@ -288,9 +288,17 @@ main, picture, main h2{margin: 0.5rem;}
     background-color: #7c1d58;
 }
 
+.btn-purple{
+  border-radius: 15px;
+	border-style: none;
+    padding: 3% 4%;
+    color: #E5E5E5;
+    background-color: #14213D;
+}
 .btn-purple:hover{
-	background-color:#092c64;
-	color: #E5E5E5;
+  background-color:#7c1d58;
+  color:#f9f8be;
+
 }
 
 .event h3 {
@@ -305,6 +313,13 @@ main, picture, main h2{margin: 0.5rem;}
 .spotlight1 img, .spotlight2 img, .weather img {
   margin: auto; 
   width: 40%;
+}
+.spotlight1 a:hover, .spotlight2 a:hover, .weather a:hover, .event a:hover {
+  color:#f9f8be;
+}
+.spotlight1 a, .spotlight2 a{
+  color:#530970;
+  
 }
 
 .weather{
@@ -648,6 +663,14 @@ fieldset{margin-top: 5px; border: none;}
 .list section:nth-child(even) {
   background-color:#968150;
   border: 1px solid #7c1d58;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 5px;
+  border-radius: 15px;
+
 }
 
 #list img,
