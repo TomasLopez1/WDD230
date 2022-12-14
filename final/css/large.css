@@ -1,0 +1,99 @@
+@media only screen and (min-width: 60em) {
+
+    h1 {
+      font-size: 8em;
+      margin: 0;
+    }
+  
+    h2 {
+      font-size: 2em;
+    }
+  
+    h3 {
+      font-size: 1.5em;
+      margin: 0;
+      color:#315E50;
+    }
+  
+    .navigation {
+      display: flex;
+      font-size: 1.5rem;
+    }
+  
+    .navigation li {
+      display: block;
+      flex: 1 1 auto;
+    }
+  
+    .navigation a {
+      text-align: center;
+    }
+  
+    .navigation li:first-child {
+      display: none;
+    }
+  
+  
+    .homeInfoSection {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+    }
+    .drink-div{
+      margin: 0% 30% 0% 30%;
+      text-align: center;
+      background-color:#fb6966;
+      font-size: 18px;
+      border-radius: 0px 0px 5px 5px;
+      border: 1px solid #c1bb41;
+      }
+    .drink{
+      display: flex;
+      align-items: flex-start;
+      margin-left: 8px;
+      margin-bottom: -50px;
+      }  
+  
+    .infoImg {
+      width: 300px;
+      border-radius: 5px 5px 0px 0px;
+    }
+  
+    .card {
+      width: 300px;
+    }
+    .index-info {
+      display: flex;
+      padding: 2%;
+  }
+  .index-info p{
+      margin-left: 5px;
+      grid-row: 3;
+      padding: 2%;
+      background-color:#ffa8a7;
+      border-radius: 10px;
+      
+    }
+    .index-info img {
+      margin-top: -50px;
+      margin-bottom: -60px;
+  }
+   
+    form {
+      padding: 20px;
+      width: 60%;
+      margin: auto;
+    }
+  
+    .logo{
+      display: block;
+    }
+  
+    nav {
+      width: unset;
+    }
+
+  }
+  .fresh-tittle{
+    text-align: center;
+  }
