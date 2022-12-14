@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Bountifoods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bountifoods Home Page">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <section class="nav-frame">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="images/logo.png" alt="logo"/>
+            </a>
+            
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a class="active" href="/final/index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="/final/aboutus.html">About us</a></li>
+            </ul>
+        </nav>
+    </section>
+    <header>
+        <div class="header-banner">
+            <h1>Bountifoods</h1>
+            <h2>Soft Drink Distributor</h2>
+        </div>
+    </header>
+    <main>
+        <section class="drink-div">
+            <div class="drink"><img src="/final/images/logo.png" alt="Fruit Drink" loading="lazy" width="50"></div><h3>Drinks purchased: <span id="drinks_purchased"></span></h3>
+            <h2>Select your fruit drink mix</h2>
+            </section>
+        <section class="homeInfoSection">
+            <div class="card">
+                <img class="infoImg" src="images/watermelon.jpg" alt="watermelon">
+                <div class="container">
+                    <h3><b>Watermelon</b></h3>
+                    <p>Carbohydrates: 8</p>
+                    <p>Protein: 0.6</p>
+                    <p>Fat: 0.2</p>
+                    <p>Calories: 30</p>
+                    <p>Sugar: 6</p>
+                    <a href="/final/fresh.html" class="button">MAKE A RESERVATION</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="infoImg" src="images/dragon-fruit.jpeg" alt="dragon-fruit">
+                <div class="container">
+                    <h3><b>Dragon Fruit</b></h3>
+                    <p>Carbohydrates: 9</p>
+                    <p>Protein: 9</p>
+                    <p>Fat: 1.5</p>
+                    <p>Calories: 60</p>
+                    <p>Sugar: 8</p>
+                    <a href="/final/fresh.html" class="button">MAKE A RESERVATION</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="infoImg" src="images/blackberry.jpg" alt="blackberry">
+                <div class="container">
+                    <h3><b>Blackberry</b></h3>
+                    <p>Carbohydrates: 9</p>
+                    <p>Protein: 1.3</p>
+                    <p>Fat: 0.4</p>
+                    <p>Calories: 40</p>
+                    <p>Sugar: 4.5</p>
+                </div>
+                <a href="/final/fresh.html" class="button">MAKE A RESERVATION</a>
+            </div>
+        </section>
+        <div class="index-info">
+            <img src="images/carlsbad.jpg" alt="Carlsbad" loading="lazy">
+            <p><b>Carlsbad, US:<br><br>
+                Coastal city founded in 1952, located in northern San Diego County, California, United States.
+                Carlsbad is a city with a low population density and a high educational level in its school district,
+                the city is well known for its high quality of life. A major concern of this city is environmental 
+                stewardship. The city has enacted ordinances that protect wildlife habitat, one of the first ordinances
+                in the state of California. In addition, the city is committed to preserving its lands.</b></p>
+            
+            
+        </div>
+        <section class="weatherSection">
+            <div class="weatherSummary">
+                <h4>Today's Weather</h4>
+                <p>Temp: <span id="currentTemp"></span>°F</p>
+                <p>Condition: <span id="condition"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+            </div>
+
+            <div class="weatherSummary">
+                <h4>Weather in 3 Days</h4>
+                <p>Temp: <span id="forecastTemp"></span>°F</p>
+                <p>Condition: <span id="forecastCondition"></span></p>
+                <p>Humidity: <span id="forecastHumidity"></span>%</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; Bountifoods <span id="year"></span> | Carlsbad, CA. U.S.A | <a id="lastupdated"></a> <br>Weather Info: <a href="https://openweathermap.org/" class="link">openweathermap.org</a><br><b>Tomas Lopez | BYU IDAHO</b>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img class="social-icon" src="images/facebook.webp" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/"><img class="social-icon" src="images/instagram.webp" alt="instagram icon"></a>
+            <a href="https://www.twitter.com/"><img class="social-icon" src="images/twitter.png" alt="twitter icon"></a>
+        </div>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/forecast.js"></script>
+    <script src="js/counter.js"></script>
+</body>
+</html>

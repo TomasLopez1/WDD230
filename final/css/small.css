@@ -1,0 +1,409 @@
+main {
+    background-color: #fbd1c7;
+    color: white;
+    width: 100%;
+  }
+  
+  footer {
+    background-color: #fb6966;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .nav-frame{
+    display: flex;
+    justify-content:space-between;
+    background: #fb6966 ;
+  }
+  
+  .logo{
+    
+    display: none;
+  }
+  
+  .logo img{
+    padding-left: 5px;
+    max-width: 100px;
+  }
+  
+  .pageHeads {
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+  }
+  
+  .social-icon {
+    height: 40px;
+    padding: 5px;
+    margin: 0px;
+  }
+  
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-size: 4em;
+    margin: 0;
+    font-family: 'Playfair Display', sans-serif;
+  }
+  
+  h2 {
+    font-size: 2em;
+    font-family: 'Playfair Display', sans-serif;
+  }
+  
+  h3 {
+    font-size: 1em;
+    font-family: 'Playfair Display', sans-serif;
+    margin: 0; 
+    color:#315E50;
+  }
+  
+  p {
+    font-family: 'Helvetica', sans-serif;
+  }
+  
+  nav {
+    background-color: #fb6966;
+    width: 100%;
+    
+  }
+  
+  .navigation {
+    list-style: none;
+    text-align: center;
+    padding-right: 5rem;
+    font-size: 1.2rem;
+    
+  }
+  
+  .navigation li:first-child {
+    display: block;
+ 
+  }
+  
+  .navigation li {
+    display: none;
+  }
+  
+  .navigation a {
+    font-family: 'Helvetica', sans-serif;
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+  }
+  
+  .navigation a:hover, a.active  {
+    color: #e0653b;
+    background-color:#c1bb41 ;
+    border-radius: 5px;
+    margin: 1px;
+  }
+  
+  .responsive li {
+    display: block;
+  }
+  
+  .header-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .35),rgba(0, 0, 0, .7)), url("../images/fruit-drink.jpg");
+    background-position: bottom center;
+    color: #c1bb41;
+    text-align: right;
+    padding: 40px;
+  }
+  
+  
+  .homeInfoSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+  }
+  .drink-div{
+    margin: 0% 5% 0% 5%;
+    text-align: center;
+    background-color:#fb6966;
+    font-size: 18px;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid #c1bb41;
+    
+    
+  }
+  
+  .infoImg {
+    width: 250px;
+  }
+  
+  .card {
+    background-color: #f17b53;
+    width: 250px;
+    text-align: center;
+    margin: 20px;
+    border-bottom: 9px solid #c1bb41;
+    border-radius: 5px;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
+  .button {
+    background-color: #c1bb41;
+    box-shadow: -2px -2px 2px 0px rgb(35, 145, 44);
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 10px;
+    cursor: pointer;
+  }
+
+  .index-info {
+    display: grid;
+    padding: 3%;
+  }
+  
+  .index-info p{
+    grid-row: 2;
+    padding: 2%;
+    background-color:#ffa8a7;
+    color:#315E50;
+    border-radius: 5px;
+    border-bottom: 9px solid #c1bb41;
+  }
+  
+  .index-info img {
+    max-width: 100%;
+    margin: auto;
+    border-radius: 5px;
+  }
+  
+  .weatherSection {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+   
+  }
+  
+  .weatherSummary {
+    background-color: #fd7e7c;
+    padding: 20px;
+    margin: 30px;
+    width: 50%;
+    font-size: 1em;
+    text-align: center;
+    border-bottom: 9px solid #c1bb41;
+    border-radius: 5px;
+  }
+   
+  .link{
+    color:#315E50;
+    text-decoration:underline;
+  }
+
+   
+  form {
+    padding: 20px;
+    margin: auto;
+  }
+  
+  form fieldset {
+    margin: 2rem 0;
+    border: 2px solid #c1bb41;
+    border-radius: 5px;
+    padding: .5rem 2%;
+  }
+  
+  form legend {
+    color: white;
+    margin: 1rem 1rem;
+    padding: 0 .5rem;
+  }
+  
+  form label.top,
+  form div {
+    display: block;
+    padding-top: 1rem;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  form label.top input,
+  form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px white;
+    padding: .75rem;
+    color: white;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgb(0, 0, 0, 0.1);
+  }
+  
+  form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: white;
+  }
+   
+  .contactDiv{
+    color:green;
+  }
+  .locationDiv {
+    text-align: center;
+    padding: 10px;
+    color: green;
+    
+  }
+  
+  iframe {
+    margin: 2px;
+    border-radius:5px;
+    
+  }
+  
+  .thanks {
+    text-align: center;
+    height: 900px;
+    padding-top: 50px;
+  }
+
+  .about-us {
+  justify-content: center;
+  text-align: center;
+  padding: 5em;
+  color: green;
+
+  }
+ 
+  .about-us p{
+    background-color:#ffa8a7;
+    padding:5px;
+    border-radius: 5px;
+    border-bottom: 7px solid #c1bb41;
+    font-size: 20px;
+  }
+  .customer-device {
+    justify-content: center;
+    text-align: left;
+    display:inline-block;
+    margin-left: 2%;
+  }
+
+  /* fresh */
+  .fresh-tittle{
+    color: #315E50;
+  }
+  
+  fieldset{
+    margin-top: 5px; 
+    border: none; 
+    border-radius: 10px;
+  }
+legend {
+  text-align: center; 
+  font-family: 'Playfair Display'; 
+  font-size: 25px; 
+  color: var(--color-5) 
+}
+
+.form-drink, .form-data {
+	margin: auto;
+	width: 70%;
+	min-width: 350px;
+	border-radius: 4px;
+  background-color: #ffa8a7;
+}
+.form-data{
+  text-align: center;
+  
+  
+}
+.form-data h3, p {
+  color: #315E50;
+}
+
+.top input, .top textarea, label.top{
+	display: block;
+	font-size: 13px;
+	width: 80%;
+	padding: 16px;
+	border-radius: 4px;
+}
+
+.flavors {
+
+  margin: auto;
+  display: block;
+
+}
+.flavors label {
+  color: #315E50; 
+  font-family: 'Playfair Display'; 
+  font-size: 15px;
+}
+select#fruit1, select#fruit2, select#fruit3 {
+  background-color: #c1bb41; 
+  border-color: #8b0e0e; 
+  padding: 2%; 
+  border-radius: 10px;
+}
+
+
+textarea#instructions {
+  width: 70%;
+  }
+  form input {border: 1px solid var(--color-3);}
+  form label.top input:required {border-left: rgb(219, 59, 10) solid 5px;}
+  form label.top input:required:valid {border-left: rgb(214, 202, 35) solid 5px;}
+  form label.top input:required {border-left: #8b0e0e solid 6px;}
+   
+.submitBtn{
+  width: 120px; 
+  font-size: 18px; 
+  margin: 15px auto 15px 30px ; 
+  color: rgb(206, 4, 4);
+  background-color: #c1bb41;
+  border-radius: 5px;
+  
+}
+.enter-button:hover{
+  background-color:#315E50;
+  color:#c1bb41;
+}
+
+.back-button{
+  color:  rgb(206, 4, 4);
+  border-radius: 5px;
+  padding: .5rem;
+  background-color:#c1bb41;
+  font-style:'Playfair Display', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+.back-button:hover{
+  background-color:#315E50;
+  color:#c1bb41;
+}
+.thankstittle{
+  text-align: center;
+  color: #315E50;
+}
+
+
+#form-output {display: none;}
+.form-data {
+  margin-top: 2rem; 
+  padding: 2%;
+}
